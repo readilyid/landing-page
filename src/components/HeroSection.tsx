@@ -17,7 +17,7 @@ const HeroSection = () => {
               transition={{ duration: 0.7 }}
             >
               <span className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground text-xs font-semibold px-4 py-2 rounded-full mb-6 border border-primary-foreground/20">
-                <Star size={14} className="fill-current" /> Platform Belajar TOEFL #1 di Indonesia
+                Platform dan Kelas Persiapan Test TOEFL
               </span>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-6">
@@ -72,26 +72,23 @@ const HeroSection = () => {
             >
               <div className="relative w-full max-w-md">
                 {/* Mock dashboard card */}
-                <div className="bg-card rounded-2xl shadow-card-hover p-6 border border-border">
-                  <div className="flex items-center gap-3 mb-5">
-                    <div className="w-10 h-10 gradient-accent rounded-lg flex items-center justify-center text-accent-foreground font-bold text-sm">TB</div>
-                    <div>
-                      <p className="text-sm font-semibold text-card-foreground">Dashboard Readily</p>
-                      <p className="text-xs text-muted-foreground">Progress Belajarmu</p>
-                    </div>
+                <div className="bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-white shadow-xl">
+                  <div className="mb-5">
+                    <p className="text-base font-bold text-white">Dashboard Readily</p>
+                    <p className="text-sm font-bold text-white">Progress Belajarmu</p>
                   </div>
                   <div className="space-y-4">
                     {[
-                      { label: "Listening", pct: 78, color: "bg-primary" },
-                      { label: "Structure", pct: 65, color: "bg-accent" },
-                      { label: "Reading", pct: 82, color: "bg-cta" },
+                      { label: "Listening", pct: 78, color: "bg-white" },
+                      { label: "Structure", pct: 65, color: "bg-white" },
+                      { label: "Reading", pct: 82, color: "bg-white" },
                     ].map((s) => (
                       <div key={s.label}>
-                        <div className="flex justify-between text-xs mb-1">
-                          <span className="text-muted-foreground font-medium">{s.label}</span>
-                          <span className="font-semibold text-card-foreground">{s.pct}%</span>
+                        <div className="flex justify-between text-sm mb-2">
+                          <span className="text-white font-bold">{s.label}</span>
+                          <span className="font-bold text-white">{s.pct}%</span>
                         </div>
-                        <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div className="h-3 bg-white/15 rounded-full overflow-hidden">
                           <motion.div
                             className={`h-full rounded-full ${s.color}`}
                             initial={{ width: 0 }}
@@ -102,16 +99,16 @@ const HeroSection = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="mt-5 p-4 bg-primary-lighter rounded-xl">
-                    <p className="text-xs font-medium text-muted-foreground mb-1">Estimasi Skor</p>
-                    <p className="text-3xl font-extrabold text-primary">523</p>
-                    <p className="text-xs text-accent font-semibold">↑ +87 dari awal</p>
+                  <div className="mt-5 p-4 bg-white/5 rounded-xl border border-white/40">
+                    <p className="text-sm font-bold text-white mb-1">Estimasi Skor</p>
+                    <p className="text-3xl font-extrabold text-white">523</p>
+                    <p className="text-sm text-white font-bold">↑ +87 dari awal</p>
                   </div>
                 </div>
 
                 {/* Floating badge */}
                 <div className="absolute -top-4 -right-4 bg-cta text-cta-foreground text-xs font-bold px-4 py-2 rounded-full shadow-lg">
-                  🔥 Naik 100+ poin
+                  Naik 100+ poin
                 </div>
               </div>
             </motion.div>

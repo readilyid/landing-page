@@ -28,7 +28,8 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
         <a href="#home" className="flex items-center">
-          <img src="/logo.png" alt="Readily" className="h-10 md:h-12 w-auto" />
+          <img src="/logo2.png" alt="Readily" className="md:hidden h-10 w-auto" />
+          <img src={scrolled ? "/logo2.png" : "/logo.png"} alt="Readily" className="hidden md:block h-12 w-auto" />
         </a>
 
         {/* Desktop */}
@@ -55,7 +56,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className={`md:hidden p-2 ${scrolled ? "text-foreground" : "text-white"}`}
+          className="md:hidden p-2" style={{ color: "#135ea6" }}
           aria-label="Menu"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
