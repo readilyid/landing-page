@@ -76,7 +76,7 @@ const HeroSection = () => {
                   <div className="flex items-center gap-3 mb-5">
                     <div className="w-10 h-10 gradient-accent rounded-lg flex items-center justify-center text-accent-foreground font-bold text-sm">TB</div>
                     <div>
-                      <p className="text-sm font-semibold text-card-foreground">Dashboard Zulzul TOEFL</p>
+                      <p className="text-sm font-semibold text-card-foreground">Dashboard Readily</p>
                       <p className="text-xs text-muted-foreground">Progress Belajarmu</p>
                     </div>
                   </div>

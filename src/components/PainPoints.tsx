@@ -60,7 +60,7 @@ const PainPoints = () => (
       >
         <div className="inline-block bg-primary-lighter rounded-2xl px-8 py-5">
           <p className="text-base md:text-lg font-semibold text-primary">
-            ✨ Zulzul TOEFL hadir sebagai solusi belajar yang terarah, efektif, dan menyenangkan.
+            ✨ Readily hadir sebagai solusi belajar yang terarah, efektif, dan menyenangkan.
           </p>
         </div>
       </motion.div>

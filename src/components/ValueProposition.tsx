@@ -21,7 +21,7 @@ const ValueProposition = () => (
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">Keunggulan Kami</span>
         <h2 className="text-2xl md:text-4xl font-extrabold text-foreground mt-3 mb-4">
-          Kenapa Harus Zulzul TOEFL?
+          Kenapa Harus Readily?
         </h2>
         <p className="text-muted-foreground">
           Kami menggabungkan metode belajar terbaik dengan teknologi modern untuk hasil yang maksimal.

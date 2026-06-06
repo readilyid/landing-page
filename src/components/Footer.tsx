@@ -7,7 +7,7 @@ const Footer = () => (
         {/* Brand */}
         <div>
           <h3 className="text-xl font-extrabold text-background mb-2">
-            Zulzul TOEFL
+            Readily
           </h3>
           <p className="text-sm leading-relaxed mb-4 text-background/60">
             Belajar Terarah, Skor Meningkat, Peluang Terbuka.
@@ -56,7 +56,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-background/10 pt-6 text-center text-xs text-background/40">
-        © {new Date().getFullYear()} Zulzul TOEFL. All rights reserved.
+        © {new Date().getFullYear()} Readily. All rights reserved.
       </div>
     </div>
   </footer>

@@ -16,7 +16,7 @@ const FinalCTA = () => (
           Siap Naikkan Skor TOEFL-mu?
         </h2>
         <p className="text-primary-foreground/80 text-base md:text-lg mb-10 max-w-xl mx-auto">
-          Jangan tunda lagi. Bergabung bersama 500+ siswa yang sudah merasakan peningkatan skor bersama Zulzul TOEFL. Mulai sekarang, raih peluangmu!
+          Jangan tunda lagi. Bergabung bersama 500+ siswa yang sudah merasakan peningkatan skor bersama Readily. Mulai sekarang, raih peluangmu!
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

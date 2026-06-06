@@ -24,7 +24,7 @@ const Benefits = () => (
             Apa yang Akan Kamu Dapatkan?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-md">
-            Setelah mengikuti program Zulzul TOEFL, kamu akan merasakan perubahan nyata dalam kemampuan dan kepercayaan dirimu.
+            Setelah mengikuti program Readily, kamu akan merasakan perubahan nyata dalam kemampuan dan kepercayaan dirimu.
           </p>
 
           <div className="space-y-4">

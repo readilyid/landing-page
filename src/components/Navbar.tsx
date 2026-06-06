@@ -27,9 +27,8 @@ const Navbar = () => {
         }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#home" className="text-xl md:text-2xl font-extrabold tracking-tight">
-          <span className={scrolled ? "text-gradient" : "text-white font-black drop-shadow-sm"}>Zulzul</span>{" "}
-          <span className={scrolled ? "text-foreground" : "text-white"}>TOEFL</span>
+        <a href="#home" className="flex items-center">
+          <img src="/logo.png" alt="Readily" className="h-10 md:h-12 w-auto" />
         </a>
 
         {/* Desktop */}

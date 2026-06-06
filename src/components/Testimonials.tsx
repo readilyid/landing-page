@@ -11,7 +11,7 @@ const testimonials = [
   {
     name: "Dimas Pratama",
     role: "Fresh Graduate",
-    text: "Berkat Zulzul TOEFL, saya berhasil memenuhi syarat TOEFL untuk daftar beasiswa LPDP. Terima kasih!",
+    text: "Berkat Readily, saya berhasil memenuhi syarat TOEFL untuk daftar beasiswa LPDP. Terima kasih!",
     score: "460 → 540",
   },
   {
@@ -51,7 +51,7 @@ const Testimonials = () => (
       >
         <span className="text-sm font-semibold text-accent uppercase tracking-wider">Testimoni</span>
         <h2 className="text-2xl md:text-4xl font-extrabold text-foreground mt-3 mb-4">
-          Apa Kata Mereka tentang Zulzul TOEFL?
+          Apa Kata Mereka tentang Readily?
         </h2>
       </motion.div>
 

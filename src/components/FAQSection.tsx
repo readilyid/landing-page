@@ -13,7 +13,7 @@ const faqs = [
   { q: "Apakah ada tryout atau simulasi tes?", a: "Ya! Setiap program sudah termasuk simulasi tes TOEFL. Program Intensive mendapat 4x simulasi, dan Private mendapat simulasi unlimited." },
   { q: "Apakah tersedia latihan gratis?", a: "Kami menyediakan placement test gratis dan 1x simulasi TOEFL gratis untuk kamu yang ingin mencoba dulu sebelum mendaftar." },
   { q: "Apakah bisa private class?", a: "Bisa! Program TOEFL Private menyediakan bimbingan 1-on-1 dengan mentor senior. Jadwal bisa disesuaikan dengan kesibukanmu." },
-  { q: "Apakah ada sertifikat?", a: "Ya, setelah menyelesaikan program kamu akan mendapatkan sertifikat kelulusan dari Zulzul TOEFL." },
+  { q: "Apakah ada sertifikat?", a: "Ya, setelah menyelesaikan program kamu akan mendapatkan sertifikat kelulusan dari Readily." },
   { q: "Apakah bisa konsultasi target skor dulu?", a: "Tentu! Kamu bisa melakukan konsultasi target skor secara gratis sebelum memutuskan program mana yang paling cocok." },
 ];
 
