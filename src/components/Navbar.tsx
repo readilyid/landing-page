@@ -14,11 +14,30 @@ const navLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const sectionIds = navLinks.map((l) => l.href.replace("#", ""));
+    const observers: IntersectionObserver[] = [];
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setActiveSection(id); },
+        { threshold: 0.4 }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
   }, []);
 
   return (
@@ -34,17 +53,21 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                scrolled ? "text-muted-foreground" : "text-white"
-              }`}
-            >
-              {l.label}
-            </a>
-          ))}
+          {navLinks.map((l) => {
+            const id = l.href.replace("#", "");
+            const isActive = id !== "home" && activeSection === id;
+            return (
+              <a
+                key={l.href}
+                href={l.href}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  isActive ? "text-primary" : scrolled ? "text-muted-foreground" : "text-white"
+                }`}
+              >
+                {l.label}
+              </a>
+            );
+          })}
           <a
             href="#daftar"
             className="gradient-cta text-cta-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
@@ -73,16 +96,22 @@ const Navbar = () => {
             className="md:hidden bg-card border-t border-border overflow-hidden"
           >
             <div className="container py-4 flex flex-col gap-3">
-              {navLinks.map((l) => (
-                <a
-                  key={l.href}
-                  href={l.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-primary py-2"
-                >
-                  {l.label}
-                </a>
-              ))}
+              {navLinks.map((l) => {
+                const id = l.href.replace("#", "");
+                const isActive = id !== "home" && activeSection === id;
+                return (
+                  <a
+                    key={l.href}
+                    href={l.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={`text-sm font-medium py-2 transition-colors hover:text-primary ${
+                      isActive ? "text-primary font-semibold" : "text-muted-foreground"
+                    }`}
+                  >
+                    {l.label}
+                  </a>
+                );
+              })}
               <a
                 href="#daftar"
                 onClick={() => setMobileOpen(false)}

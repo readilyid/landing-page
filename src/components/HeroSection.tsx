@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, Users, TrendingUp, Star } from "lucide-react";
 
@@ -54,11 +55,11 @@ const HeroSection = () => {
               {/* Social proof */}
               <div className="flex flex-wrap gap-6 text-primary-foreground/70 text-sm">
                 <div className="flex items-center gap-2">
-                  <Users size={18} className="text-accent" />
+                  <Users size={18} className="text-[hsl(25,95%,55%)]" />
                   <span><strong className="text-primary-foreground">500+</strong> siswa terbantu</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <TrendingUp size={18} className="text-accent" />
+                  <TrendingUp size={18} className="text-[hsl(25,95%,55%)]" />
                   <span>Skor meningkat <strong className="text-primary-foreground">100+ poin</strong></span>
                 </div>
               </div>
@@ -70,46 +71,16 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="hidden lg:flex justify-center"
             >
-              <div className="relative w-full max-w-md">
-                {/* Mock dashboard card */}
-                <div className="bg-white/5 backdrop-blur-xl rounded-2xl p-6 border border-white shadow-xl">
-                  <div className="mb-5">
-                    <p className="text-base font-bold text-white">Dashboard Readily</p>
-                    <p className="text-sm font-bold text-white">Progress Belajarmu</p>
-                  </div>
-                  <div className="space-y-4">
-                    {[
-                      { label: "Listening", pct: 78, color: "bg-white" },
-                      { label: "Structure", pct: 65, color: "bg-white" },
-                      { label: "Reading", pct: 82, color: "bg-white" },
-                    ].map((s) => (
-                      <div key={s.label}>
-                        <div className="flex justify-between text-sm mb-2">
-                          <span className="text-white font-bold">{s.label}</span>
-                          <span className="font-bold text-white">{s.pct}%</span>
-                        </div>
-                        <div className="h-3 bg-white/15 rounded-full overflow-hidden">
-                          <motion.div
-                            className={`h-full rounded-full ${s.color}`}
-                            initial={{ width: 0 }}
-                            animate={{ width: `${s.pct}%` }}
-                            transition={{ duration: 1, delay: 0.5 }}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-5 p-4 bg-white/5 rounded-xl border border-white/40">
-                    <p className="text-sm font-bold text-white mb-1">Estimasi Skor</p>
-                    <p className="text-3xl font-extrabold text-white">523</p>
-                    <p className="text-sm text-white font-bold">↑ +87 dari awal</p>
-                  </div>
-                </div>
+              <div className="relative w-full">
+                <Image
+                  src="/hero2.png"
+                  alt="Readily Dashboard"
+                  width={700}
+                  height={600}
+                  className="w-full h-auto"
+                  priority
+                />
 
-                {/* Floating badge */}
-                <div className="absolute -top-4 -right-4 bg-cta text-cta-foreground text-xs font-bold px-4 py-2 rounded-full shadow-lg">
-                  Naik 100+ poin
-                </div>
               </div>
             </motion.div>
           </div>

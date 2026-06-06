@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     description:
       "Bergabung bersama 500+ siswa yang sudah merasakan peningkatan skor TOEFL bersama Readily.",
     type: "website",
-    images: [{ url: "https://lovable.dev/opengraph-image-p98pqg.png" }],
+    // images: [{ url: "https://lovable.dev/opengraph-image-p98pqg.png" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://lovable.dev/opengraph-image-p98pqg.png"],
+    // images: ["https://lovable.dev/opengraph-image-p98pqg.png"],
   },
 };
 
