@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.gitignore
+README.md
+*.md
+.env*.local
+.vscode
+.idea
+playwright.config.ts
+playwright-fixture.ts
+src/test
+build_log*.txt
+bun.lock
+bun.lockb
