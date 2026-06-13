@@ -97,7 +97,8 @@ const Programs = () => (
             </div>
 
             <a
-              href="#daftar"
+              href="https://readily-practice-1083714527574.asia-southeast1.run.app/"
+              target="_blank"
               className={`w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold transition-all ${
                 pkg.popular
                   ? "gradient-cta text-cta-foreground hover:opacity-90"

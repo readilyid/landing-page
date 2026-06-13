@@ -69,7 +69,8 @@ const Navbar = () => {
             );
           })}
           <a
-            href="#daftar"
+            href="https://readily-practice-1083714527574.asia-southeast1.run.app"
+            target="_blank"
             className="gradient-cta text-cta-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity"
           >
             Daftar Sekarang
@@ -113,7 +114,8 @@ const Navbar = () => {
                 );
               })}
               <a
-                href="#daftar"
+                href="https://readily-practice-1083714527574.asia-southeast1.run.app/"
+                target="_blank"
                 onClick={() => setMobileOpen(false)}
                 className="gradient-cta text-cta-foreground px-5 py-3 rounded-lg text-sm font-semibold text-center mt-2"
               >

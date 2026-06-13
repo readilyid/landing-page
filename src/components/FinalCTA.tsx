@@ -21,7 +21,8 @@ const FinalCTA = () => (
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#daftar"
+            href="https://readily-practice-1083714527574.asia-southeast1.run.app"
+            target="_blank"
             className="gradient-cta text-cta-foreground px-8 py-4 rounded-xl text-base font-semibold hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
           >
             Daftar Sekarang <ArrowRight size={18} />
